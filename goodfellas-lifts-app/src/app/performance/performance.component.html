@@ -1,0 +1,26 @@
+<section id="performance">
+  <header>
+    <img src="{{ lifter()?.avatar }}" />
+    <div>
+      <h3>Competition PR</h3>
+      <p>Squat: {{ lifter()?.personalRecordComp?.squat }} kg</p>
+      <p>Bench: {{ lifter()?.personalRecordComp?.bench }} kg</p>
+      <p>Deadlift: {{ lifter()?.personalRecordComp?.deadlift }} kg</p>
+    </div>
+    <div>
+      <h3>Gym PR</h3>
+      <p>Squat: {{ lifter()?.personalRecordGym?.squat }} kg</p>
+      <p>Bench: {{ lifter()?.personalRecordGym?.bench }} kg</p>
+      <p>deadlift: {{ lifter()?.personalRecordGym?.deadlift }} kg</p>
+    </div>
+  </header>
+</section>
+
+<section id="performance">
+  <header>
+    <h2>{{ lifter()?.name }}</h2>
+    <menu>
+      <button>Add mission</button>
+    </menu>
+  </header>
+</section>

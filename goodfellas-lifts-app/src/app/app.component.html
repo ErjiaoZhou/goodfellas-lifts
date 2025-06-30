@@ -1,9 +1,32 @@
-<app-header/>
+<app-header />
 <main>
+  <!--li *ngFor="let lifter of lifters">
+  <app-lifter-side-nav
+          [lifter]="lifter"
+          [avatar]="lifter.avatar"
+          (select)="onSelectLifter($event)"
+        />
+  </li-->
   <ul id="lifters">
-    <li>
-      <app-lifter/>
-    </li>
+    @for (lifter of lifters; track lifter.id) {
+      <li>
+        <app-lifter-side-nav
+          [lifter]="lifter"
+          [avatar]="lifter.avatar"
+          (select)="onSelectLifter($event)"
+        />
+      </li>
+    }
   </ul>
-</main>
 
+  <!--app-performance *ngIf="selectedLifter; else fallback" [lifter]="selectedLifter" />
+  <ng-template-- #fallback>
+    <p id="fallback">Select a powerlifter to see her/his performance!</p>
+  </ng-template-->
+
+  @if (selectedLifter) {
+    <app-performance [lifter]="selectedLifter" />
+  } @else {
+    <p id="fallback">Select a powerlifter to see her/his performance!</p>
+  }
+</main>
