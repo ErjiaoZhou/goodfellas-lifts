@@ -2,10 +2,11 @@ import { Lifter } from './types/lifter';
 
 export const DummyLifters: Lifter[] = [
   {
-    id: 'u1',
-    name: 'Michael Brandl',
+    id: '1',
+    name: 'Michael BRANDL',
     avatar: 'michi-brandl.jpg',
-    bornYear: 1999,
+    bornYear: 1997,
+    weightClass: '120',
     personalRecordComp: {
       squat: 90,
       bench: 56,
@@ -18,10 +19,11 @@ export const DummyLifters: Lifter[] = [
     },
   },
   {
-    id: 'u2',
-    name: 'Paul Kiedl',
+    id: '2',
+    name: 'Paul KIEDL',
     avatar: 'paul-kiedl.jpg',
-    bornYear: 2002,
+    bornYear: 2000,
+    weightClass: '83',
     personalRecordComp: {
       squat: 90,
       bench: 56,
@@ -34,10 +36,11 @@ export const DummyLifters: Lifter[] = [
     },
   },
   {
-    id: 'u3',
-    name: 'Rene Hofer',
+    id: '3',
+    name: 'Rene HOFER',
     avatar: 'rene.jpeg',
-    bornYear: 1996,
+    weightClass: '83',
+    bornYear: 1997,
     personalRecordComp: {
       squat: 90,
       bench: 56,
@@ -50,10 +53,11 @@ export const DummyLifters: Lifter[] = [
     },
   },
   {
-    id: 'u4',
-    name: 'Erjiao Zhou',
+    id: '4',
+    name: 'Erjiao ZHOU',
     avatar: 'jiaojiao.jpeg',
     bornYear: 1994,
+    weightClass: '47',
     personalRecordComp: {
       squat: 90,
       bench: 56,
@@ -62,14 +66,49 @@ export const DummyLifters: Lifter[] = [
     personalRecordGym: {
       squat: 95,
       bench: 57.5,
-      deadlift: 105.5,
+      deadlift: 105,
     },
   },
   {
-    id: 'u5',
-    name: 'Markus Freiwein',
+    id: '5',
+    name: 'Markus FREWEIN',
     avatar: 'markus.jpeg',
-    bornYear: 2000,
+    bornYear: 1990,
+    weightClass: '92',
+    personalRecordComp: {
+      squat: 90,
+      bench: 56,
+      deadlift: 100,
+    },
+    personalRecordGym: {
+      squat: 95,
+      bench: 57.5,
+      deadlift: 105,
+    },
+  },
+  {
+    id: '6',
+    name: 'Lorena KERSCHBAUMER',
+    avatar: 'lorena.jpg',
+    bornYear: 1998,
+    weightClass: '63',
+    personalRecordComp: {
+      squat: 90,
+      bench: 56,
+      deadlift: 100,
+    },
+    personalRecordGym: {
+      squat: 95,
+      bench: 57.5,
+      deadlift: 105,
+    },
+  },
+  {
+    id: '7',
+    name: 'Imke BRANDT',
+    avatar: 'imke.jpg',
+    bornYear: 1996,
+    weightClass: '57',
     personalRecordComp: {
       squat: 90,
       bench: 56,

@@ -21,6 +21,7 @@ export class LifterSideNavComponent {
   //----------inputs----------------
   readonly lifter = input.required<Lifter>();
   readonly avatar = model.required<string>();
+  readonly isSelected = input.required<boolean>();
 
   //----------outputs----------------
   //alternative for output and add a type is safer

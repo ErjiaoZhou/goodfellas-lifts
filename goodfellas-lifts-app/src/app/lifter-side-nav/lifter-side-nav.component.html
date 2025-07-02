@@ -1,5 +1,5 @@
 <div>
-  <button (click)="selectLifter()">
+  <button [class.active]="isSelected()" (click)="selectLifter()">
     <img [src]="imgPath()" [alt]="lifter().avatar" />
     <span>{{ lifter().name }}</span>
   </button>

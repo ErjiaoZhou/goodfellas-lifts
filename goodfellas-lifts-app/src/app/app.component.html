@@ -11,6 +11,7 @@
     @for (lifter of lifters; track lifter.id) {
       <li>
         <app-lifter-side-nav
+          [isSelected]="lifter.id === selectedLifter?.id"
           [lifter]="lifter"
           [avatar]="lifter.avatar"
           (select)="onSelectLifter($event)"

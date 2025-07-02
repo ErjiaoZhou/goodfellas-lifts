@@ -6,6 +6,7 @@ export interface Lifter {
   name: string;
   avatar: string;
   bornYear: number;
+  weightClass: string;
   personalRecordGym: PersonalRecordGym;
   personalRecordComp: PersonalRecordComp;
 }

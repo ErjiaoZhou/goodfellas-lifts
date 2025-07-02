@@ -1,1 +1,8 @@
-<p>mission works!</p>
+<article>
+  <h2>Mission {{ mission().id }}: {{ mission().title }}</h2>
+  <time>Time: {{ mission().dueDate }}</time>
+  <p>Summary: {{ mission().summary }}</p>
+  <p class="actions">
+    <button>Complete</button>
+  </p>
+</article>

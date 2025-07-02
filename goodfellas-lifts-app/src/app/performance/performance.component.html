@@ -18,9 +18,21 @@
 
 <section id="performance">
   <header>
-    <h2>{{ lifter()?.name }}</h2>
+    <h2>
+      {{ lifter()?.name }} ({{ lifter()?.bornYear }}) | -{{
+        lifter()?.weightClass
+      }}kg
+    </h2>
     <menu>
       <button>Add mission</button>
     </menu>
   </header>
+
+  <ul>
+    @for (mission of selectedLifterMissions; track mission.id) {
+      <li>
+        <app-mission [mission]="mission" />
+      </li>
+    }
+  </ul>
 </section>
